@@ -1,0 +1,66 @@
+.main {
+  max-width: 100%;
+  width: 500px;
+  margin: auto;
+}
+
+.container {
+  overflow-x: hidden;
+}
+
+
+
+.bg-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #111;
+  overflow: hidden;
+  z-index: -1;
+}
+.bg {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face{
+  font-family: 'TIMSans Regular';
+  font-style: 'normal';
+  font-weight: 400;
+  src: url("../assets/fonts/TIMSans-Regular.ttf");
+  src: local('TIMSans Regular'), local('TIMSans Regular'),url("../assets/fonts/TIMSans-Regular.ttf") format('truetype');
+}
+@font-face{
+  font-family: 'TIMSans Bold';
+  font-style: 'normal';
+  font-weight: 400;
+  src: url("../assets/fonts/TIMSans-Bold.ttf");
+  src: local('TIMSans Bold'), local('TIMSans Bold'),url("../assets/fonts/TIMSans-Bold.ttf") format('truetype');
+}
+@font-face{
+  font-family: 'TIMSans Heavy';
+  font-style: 'normal';
+  font-weight: 400;
+  src: url("../assets/fonts/TIMSans-Heavy.ttf");
+  src: local('TIMSans Heavy'), local('TIMSans Heavy'),url("../assets/fonts/TIMSans-Heavy.ttf") format('truetype');
+}
+@font-face{
+  font-family: 'TIMSans Light';
+  font-style: 'normal';
+  font-weight: 400;
+  src: url("../assets/fonts/TIMSans-Light.ttf");
+  src: local('TIMSans Light'), local('TIMSans Light'),url("../assets/fonts/TIMSans-Light.ttf") format('truetype');
+}
+@font-face{
+  font-family: 'TIMSans Medium';
+  font-style: 'normal';
+  font-weight: 400;
+  src: url("../assets/fonts/TIMSans-Medium.ttf");
+  src: local('TIMSans Medium'), local('TIMSans Medium'),url("../assets/fonts/TIMSans-Medium.ttf") format('truetype');
+}
+body, span, button{
+  font-family: 'TIMSans Regular';
+}
+

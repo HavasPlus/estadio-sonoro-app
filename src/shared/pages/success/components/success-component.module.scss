@@ -1,0 +1,24 @@
+.success {
+  -webkit-appearance: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  position: relative;
+
+  text-align: center;
+  max-height: 800px;
+  height: calc(100% - 36px);
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  &-title {
+    margin-bottom: 40px;
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+    span {
+      font-size: 18px
+    }
+  }
+}

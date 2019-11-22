@@ -1,0 +1,48 @@
+.counter {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 200px;
+  margin: 12px auto;
+
+  
+  &-title {
+
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+  }
+  &-number {
+    position: relative;
+    border: 1px solid white;
+    border-radius: 6px;
+    font-size: 36px;
+    padding: 6px 4px;
+    background-color: transparent;
+    color: white;
+    &:after {
+      position: absolute;
+      top: 50%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      opacity: 0.15;
+      content: "";
+    }
+  }
+}
+
+
+.counter-subtitle {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+  }

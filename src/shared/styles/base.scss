@@ -1,0 +1,191 @@
+@mixin hook-base-body() {
+  text-rendering: geometricPrecision;
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: $breakpoint-small-max) {
+    font-size: 16px;
+    line-height: 1.38;
+  }
+}
+
+ul:not([class]) {
+  padding: 0;
+  > li {
+    position: relative;
+    list-style: none;
+    padding-left: 29px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      top: 0.5em;
+      left: 5px;
+      border-radius: 50%;
+      background-color: $global-color;
+    }
+    &:nth-child(n + 2) {
+      margin-top: 8px;
+    }
+  }
+}
+
+.uk-list {
+  &.uk-list-check {
+    > li {
+      position: relative;
+      padding-left: 29px;
+      &:nth-child(n + 2) {
+        margin-top: 8px;
+      }
+      &::before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        color: $global-primary-background;
+      }
+    }
+  }
+}
+
+ol:not([class]) {
+  counter-reset: ol;
+  padding: 0;
+  > li {
+    position: relative;
+    list-style: none;
+    padding-left: 29px;
+    &::before {
+      counter-increment: ol;
+      content: counter(ol) ".";
+      position: absolute;
+      top: 0;
+      left: 5px;
+      color: $global-color;
+    }
+    &:nth-child(n + 2) {
+      margin-top: 8px;
+    }
+  }
+}
+
+blockquote {
+  background-color: rgba(105, 190, 40, 0.05);
+  color: $global-primary-background;
+  padding: 16px 24px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+  &::before {
+    color: $global-primary-background;
+    content: "\2033";
+    opacity: 0.2;
+    position: absolute;
+    left: 8px;
+    top: 9px;
+    font-size: 58px;
+    font-style: italic;
+    line-height: 0.9;
+    z-index: -1;
+    @media (max-width: $breakpoint-small-max) {
+      left: 1px;
+      top: 6px;
+    }
+  }
+  p {
+    margin: 0;
+  }
+  @media (max-width: $breakpoint-small-max) {
+    font-size: 15px;
+    padding: 16px;
+  }
+}
+
+.uk-text {
+  &-small {
+    @media (min-width: $breakpoint-large) {
+      font-size: 16px;
+    }
+  }
+  &-big {
+    @media (min-width: $breakpoint-large) {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+  text-transform: uppercase;
+  color: $brand-secondary;
+}
+
+h1 {
+  @media (max-width: $breakpoint-small-max) {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+}
+
+h2 {
+  @media (max-width: $breakpoint-small-max) {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+  @media (max-width: 480px) {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  @media (max-width: $breakpoint-small-max) {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  @media (max-width: $breakpoint-small-max) {
+    font-size: 18px;
+  }
+}
+
+h5 {
+  @media (max-width: $breakpoint-small-max) {
+    font-size: 14px;
+  }
+  color: $brand-secondary;
+}
+
+h6 {
+  color: $gray;
+  font-family: $global-font-family;
+  font-weight: 500;
+  margin-bottom: 4px;
+  @media (max-width: $breakpoint-small-max) {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+}
+
+@mixin hook-base-blockquote() {
+  @media (max-width: $breakpoint-small-max) {
+    font-size: 1rem;
+  }
+}
+
+.uk-container {
+  &.uk-container-medium {
+    max-width: $container-medium-max-width;
+  }
+}

@@ -1,0 +1,41 @@
+.logo {
+  -webkit-appearance: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  position: relative;
+  margin-top: -100px;
+  margin-bottom: -90px;
+  z-index: -1;
+
+  &-children {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: auto;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+  }
+}
+
+.waves {
+  width: 100%;
+  z-index: -1;
+  
+  height: auto;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: auto;
+  right: 0;
+  z-index: 0;
+  width: 100%;
+}

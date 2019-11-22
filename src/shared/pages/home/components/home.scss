@@ -1,0 +1,37 @@
+.home {
+  &-container {
+    margin: auto;
+    text-align: center;
+    padding: 12px ;
+    padding-top: 0;
+    a {
+      color: red;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+  &-title {
+    width: 200px;
+    margin: auto;
+    width: 250px;
+    line-height: normal;
+    animation: opacity 1000ms linear;
+    > * {
+      font-weight: bold !important;
+      margin-bottom: 16px !important;
+      color: white;
+    }
+  }
+}
+
+.home-logo-container {
+  animation: all 100ms ease;
+  z-index: 0;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(0);
+}

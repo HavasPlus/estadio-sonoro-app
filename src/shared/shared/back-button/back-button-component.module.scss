@@ -1,0 +1,19 @@
+.button {
+  -webkit-appearance: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  z-index: 2;
+  position: relative;
+  max-width: 360px;
+ 
+  margin: 24px auto;
+
+  > div {
+    width: 32px;
+    cursor: pointer;
+    margin-left: 24px;
+  }
+  img {
+    height: 16px;
+  }
+}

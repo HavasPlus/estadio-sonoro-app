@@ -1,0 +1,162 @@
+//test data
+$red-b44: #b72b56;
+
+//
+// Brand colors
+//
+$brand-primary: #00a29c !default;
+$brand-secondary: #b72b56 !default;
+
+$gray: #3e3e3e !default;
+$gray-dark: #1e1e1e !default;
+$gray-light: #828282 !default;
+$gray-lighter: #7c7c7c !default;
+
+$bg-muted: #f5fafa !default;
+
+//extra color for description in module nieuwsbrief
+$light: #818383 !default;
+$lighter: #a3a3a3 !default;
+//
+// Breakpoints
+//
+$breakpoint-xsmall: 480px !important;
+$breakpoint-small: 640px !default;
+$breakpoint-small-medium: 768px !important;
+$breakpoint-medium: 960px !default;
+$breakpoint-large: 1200px !default;
+$breakpoint-xlarge: 1600px !default;
+
+$breakpoint-xsmall-max: ($breakpoint-small - 1) !default;
+$breakpoint-small-max: ($breakpoint-medium - 1) !default;
+$breakpoint-small-medium-max: ($breakpoint-small-medium - 1) !default;
+$breakpoint-medium-max: ($breakpoint-large - 1) !default;
+$breakpoint-large-max: ($breakpoint-xlarge - 1) !default;
+
+//
+// Typography
+//
+
+$global-font-family: "Josefin Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+  "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$global-font-family-secondary: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+  Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$global-font-size: 18px !default;
+$global-line-height: 1.44 !default;
+
+$global-xxlarge-font-size: 55px !default;
+$global-xlarge-font-size: 38px !default;
+$global-large-font-size: 32px !default;
+$global-medium-font-size: 26px !default;
+$global-small-font-size: 14px !default;
+
+//
+// Colors
+//
+
+$global-color: $gray !default;
+$global-inverse-color: #fff !default;
+$global-muted-color: #999 !default;
+$global-emphasis-color: #f6faf2 !default;
+
+$global-link-color: $brand-primary !default;
+$global-link-hover-color: darken($global-link-color, 15%) !default;
+
+$global-background: #fff !default;
+$global-muted-background: $bg-muted !default;
+$global-primary-background: $brand-primary !default;
+$global-secondary-background: $brand-secondary !default;
+
+$global-success-background: #32d296 !default;
+$global-warning-background: #faa05a !default;
+$global-danger-background: #fa3939 !default;
+
+//
+// Borders
+//
+
+$global-border-width: 1px;
+$global-border: #ececec;
+
+//
+// Spacings
+//
+
+// Used in margin, section, list
+$global-margin: 24px;
+$global-small-margin: 16px;
+$global-medium-margin: 32px;
+$global-large-margin: 40px;
+$global-xlarge-margin: 120px;
+
+// Used in grid, column, container, align, card, padding
+$global-gutter: 24px;
+$global-small-gutter: 16px;
+$global-medium-gutter: 32px;
+$global-large-gutter: 40px;
+
+//
+// Container
+//
+
+$container-max-width: 1160px !default;
+$container-small-max-width: 740px !default;
+$container-medium-max-width: 860px !default;
+$container-large-max-width: 1600px !default;
+
+$container-padding-horizontal: 16px !default;
+$container-padding-horizontal-s: $global-gutter !default;
+$container-padding-horizontal-m: $global-medium-gutter !default;
+
+//
+// Buttons
+//
+
+$button-hover-background: darken($global-muted-background, 7%);
+$button-hover-color: $global-link-hover-color;
+$button-primary-hover-background: darken($global-primary-background, 7%);
+
+//
+// Border
+//
+
+$global-border: #eceaea;
+
+$accordion-item-margin-top: $global-margin !default;
+$global-medium-font-size: $global-font-size !default;
+$accordion-title-font-size: $global-font-size !default;
+$accordion-title-line-height: 1.4 !default;
+$accordion-title-color: #00a29c !default;
+$accordion-title-hover-color: #00a29c !default;
+$accordion-content-margin-top: 8px !default;
+
+// new
+
+$base-heading-font-family: $global-font-family-secondary;
+$base-heading-font-weight: normal;
+$base-heading-color: inherit;
+$base-heading-text-transform: none;
+$base-heading-margin-top: $global-medium-margin;
+
+$base-h1-font-size: $global-xxlarge-font-size;
+$base-h1-line-height: 1;
+$base-h2-font-size: $global-xlarge-font-size;
+$base-h2-line-height: 1.26;
+$base-h3-font-size: $global-large-font-size;
+$base-h3-line-height: 1.25;
+$base-h4-font-size: $global-medium-font-size;
+$base-h4-line-height: 1.38;
+$base-h5-font-size: 18px;
+$base-h5-line-height: 1.33;
+$base-h6-font-size: $global-small-font-size;
+$base-h6-line-height: 1;
+$base-list-padding-left: 35px;
+$base-em-color: inherit;
+
+$base-blockquote-font-size: 16px;
+$base-blockquote-line-height: 1.5;
+$base-blockquote-font-style: italic;
+$base-blockquote-margin-vertical: $global-margin;
+$base-blockquote-footer-margin-top: $global-small-margin;
+$base-blockquote-footer-font-size: $global-small-font-size;
+$base-blockquote-footer-line-height: 1.5;

@@ -1,0 +1,35 @@
+.checkbox {
+  -webkit-appearance: none;
+
+  border-radius: 4px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  position: relative;
+  margin: 0 8px 0 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  outline: none !important;
+
+  img {
+    width: 16px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    bottom: 0;
+  }
+
+  &-label {
+   
+    font-size: 14px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    align-items: center;
+    cursor: pointer;
+    color: $global-color;
+  }
+  &-count {
+    color: $gray-light;
+    margin-left: 4px;
+  }
+}

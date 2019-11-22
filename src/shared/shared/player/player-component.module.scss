@@ -1,0 +1,23 @@
+
+.share {
+  -webkit-appearance: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  position: relative;
+  text-align: center;
+  margin-top: 36px;
+  &-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 22px;
+  }
+  &-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    max-width: 260px;
+    margin: auto;
+  }
+ 
+}

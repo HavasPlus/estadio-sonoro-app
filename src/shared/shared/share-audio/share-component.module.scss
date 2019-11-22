@@ -1,0 +1,34 @@
+.share {
+  -webkit-appearance: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  position: relative;
+  text-align: center;
+  margin-top: 36px;
+      max-width: 170px;
+      margin: auto;
+  &-title {
+    max-width: 150;
+    margin: auto;
+    font-size: 16px;
+
+    margin-bottom: 12px;
+
+    font-family: TIMSans Regular;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+
+    margin: auto;
+  }
+  img {
+    height: 45px;
+    cursor: pointer;
+    width: 45px;
+  }
+}
