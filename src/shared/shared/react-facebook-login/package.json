@@ -71,7 +71,7 @@
     "sass-loader": "^3.0.0",
     "style-loader": "0.12.x",
     "webpack": "1.12.x",
-    "webpack-dev-server": "1.12.x"
+    "webpack-dev-server": "3.1.x"
   },
   "homepage": "https://github.com/keppelen/react-facebook-login",
   "keywords": [
