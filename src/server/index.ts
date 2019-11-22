@@ -57,7 +57,13 @@ app.use(errorHandler);
 // Let the world know we're up and running
 
 var env = process.env.NODE_ENV || "dev";
-
+app.listen(process.env.PORT || 3000, () => {
+    console.log(
+        `[${new Date().toISOString()}]`,
+        chalk.blue(`Application is running: http://localhost:${process.env.PORT || 3000}`)
+    );
+});
+/*
 if (process.env.NODE_ENV === "development") {
   app.listen(process.env.PORT || 3000, () => {
     console.log(
@@ -84,5 +90,5 @@ if (process.env.NODE_ENV === "development") {
       console.log(chalk.blue(`Application is running: https://localhost:${process.env.PORT || 3000}`));
     });
 }
-
+*/
 export default app;
