@@ -242,7 +242,7 @@ export const LoginComponent = (props: ILoginComponentProps & RouteComponentProps
       return;
     }
     if (!(checkEmail() && checkPassword())) {
-      setErrorMessage("Todos os campos são obrigatórios.");
+      setErrorMessage("Tododsadsadass os campos são obrigatórios.");
       return;
     }
     setIsLoading(true);
@@ -320,59 +320,57 @@ export const LoginComponent = (props: ILoginComponentProps & RouteComponentProps
           >
             <HeaderTitle />
             <HeaderSubtitle />
-
-            <div style={{display: "none"}}>
-              <FacebookLogin
-                  // appId="564170557489738" //dev
-                  appId="391583351534831" //prod
-                  // isMobile={true}
-                  callback={(response: any) => {
-                    loginFb(response.accessToken, response.id);
+            {/* <FacebookLogin
+              // appId="564170557489738" //dev
+              appId="391583351534831" //prod
+              isMobile={false}
+              redirectUri="https://10.0.0.244:3000/"
+              callback={(response: any) => {
+                loginFb(response.accessToken, response.id);
+              }}
+              render={(renderProps: any) => (
+                <Button
+                  isLoading={isLoading}
+                  onClick={() => {
+                    if (!isChecked) alert("Para continuar é necessário que você aceite os termos e condições de uso");
+                    else renderProps.onClick();
                   }}
-                  render={(renderProps: any) => (
-                      <Button
-                          isLoading={isLoading}
-                          onClick={() => {
-                            if (!isChecked) alert("Para continuar é necessário que você aceite os termos e condições de uso");
-                            else renderProps.onClick();
-                          }}
-                          icon={FACEBOOK_ICON}
-                          fillColor="#3b5998"
-                          title="ENTRAR COM FACEBOOK"
-                      />
-                  )}
-              />
-              {/* client secret NJhb97LtjLPbNOaR3mmhSDCx */}
-              <GoogleLogin
-                  // clientId="806425868385-b54ngpo0311a8ekses2tq76ctbgvij1k.apps.googleusercontent.com" //dev
-                  clientId="895580006168-7t33sgrpvv79tb7148q3h6e943gjbot7.apps.googleusercontent.com" //dev
-                  render={renderProps => (
-                      <Button
-                          icon={GOOGLE_ICON}
-                          onClick={() => {
-                            if (!isChecked) alert("Para continuar é necessário que você aceite os termos e condições de uso");
-                            else renderProps.onClick();
-                          }}
-                          isLoading={renderProps.disabled}
-                          title="ENTRAR COM GOOGLE"
-                      />
-                  )}
-                  responseType="id_token"
-                  style={{ padding: 0 }}
-                  buttonText="Login"
-                  onSuccess={(response: any) => {
-                    if (response.getBasicProfile) {
-                      const name = response.getBasicProfile().getName();
-                      const googleId = response.getBasicProfile().getId();
-                      loginGoogle(name, googleId);
-                    }
+                  icon={FACEBOOK_ICON}
+                  fillColor="#3b5998"
+                  title="ENTRAR COM FACEBOOK"
+                />
+              )}
+            />
+            {/* client secret NJhb97LtjLPbNOaR3mmhSDCx */}
+            {/* <GoogleLogin
+              // clientId="806425868385-b54ngpo0311a8ekses2tq76ctbgvij1k.apps.googleusercontent.com" //dev
+              clientId="895580006168-7t33sgrpvv79tb7148q3h6e943gjbot7.apps.googleusercontent.com" //dev
+              render={renderProps => (
+                <Button
+                  icon={GOOGLE_ICON}
+                  onClick={() => {
+                    if (!isChecked) alert("Para continuar é necessário que você aceite os termos e condições de uso");
+                    else renderProps.onClick();
                   }}
-                  onFailure={response => {
-                    console.log("error:", response);
-                  }}
-                  cookiePolicy={"single_host_origin"}
-              />
-            </div>
+                  isLoading={renderProps.disabled}
+                  title="ENTRAR COM GOOGLE"
+                />
+              )}
+              responseType="id_token"
+              style={{ padding: 0 }}
+              buttonText="Login"
+              onSuccess={(response: any) => {
+                if (response.getBasicProfile) {
+                  const name = response.getBasicProfile().getName();
+                  const googleId = response.getBasicProfile().getId();
+                  loginGoogle(name, googleId);
+                }
+              }}
+              onFailure={response => {
+                console.log("error:", response);
+              }}
+              cookiePolicy={"single_host_origin"}
+            /> */}
 
             <Button
               isLoading={isLoading}

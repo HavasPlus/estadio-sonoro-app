@@ -1,0 +1,17 @@
+version: "3.5"
+
+networks:
+  appes_network:
+    driver: bridge
+
+services:
+  app:
+    build: .
+    container_name: app_es
+    working_dir: /usr/src/app
+    networks:
+      - appes_network
+    volumes:
+      - ./:/usr/src/app/getProvi
+    ports:
+      - "3000:3000"

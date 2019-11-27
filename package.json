@@ -199,8 +199,7 @@
     "yarn-or-npm": "2.0.4"
   },
   "husky": {
-    "hooks": {
-    }
+    "hooks": {}
   },
   "lint-staged": {
     "*.{tsx,ts,json,css,md}": [
